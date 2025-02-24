@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url(celulares.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Altura de la pantalla completa */
+    margin: 0;
+    padding: 0;
+}
+.host{
+    background: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
+    color: white; /* Texto en blanco */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.ser{
+    background: rgba(0, 0, 10, 0.5); /* Negro con 50% de opacidad */
+    color: white; /* Texto en blanco */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-shadow: 2px 2px 4px gold;
+}
+/* Estilos para el contenedor principal */
+.contenedor {
+    display: flex; /* Hace que los divs se alineen horizontalmente */
+    justify-content: space-between; /* Distribuye el espacio entre los divs */
+    gap: 20px; /* Espacio entre los divs */
+    padding: 20px; /* Espacio interno */
+    background-color:  rgba(0, 0, 0, 0.5);
+
+
+ 
+  }
+  
+  /* Estilos para cada div (misión, visión, valores) */
+  .mision, .vision, .valores {
+    flex: 1; /* Hace que cada div ocupe el mismo espacio */
+    padding: 15px;
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 8px; /* Esquinas redondeadas */
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  /* Estilos para los títulos */
+  h3 {
+    color: white; /* Color del texto */
+    margin-bottom: 10px; /* Espacio debajo del título */
+  }
+  
+  /* Estilos para los párrafos */
+  p {
+    color: white; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+  }
+  @media (max-width: 768px) {
+    .contenedor {
+      flex-direction: column; /* Apila los divs verticalmente */
+    }
+  }
