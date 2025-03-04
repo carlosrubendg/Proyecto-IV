@@ -1,22 +1,71 @@
-<div class="container-menu" *ngIf="usuarioLogueado">
-  <div class="menu-bar">
-    <span>Bienvenido, {{ usuarioLogueado }}</span>
-    <button (click)="logout()">Cerrar sesión</button>
+<!-- auth.component.html -->
+<div class="auth-container">
+  <!-- Sección para usuario logueado -->
+  <div class="user-welcome" *ngIf="usuarioLogueado">
+    <div class="welcome-content">
+      <div class="user-info">
+        <i class="fas fa-user-circle"></i>
+        <span>Bienvenido, {{ usuarioLogueado }}</span>
+      </div>
+      <button class="btn-logout" (click)="logout()">
+        <i class="fas fa-sign-out-alt"></i>
+        Cerrar sesión
+      </button>
+    </div>
   </div>
-</div>
 
-<div class="container-form" *ngIf="!usuarioLogueado">
-  <div class="form-box">
-    <h2>Iniciar Sesión</h2>
-    <form (submit)="login()">
-      <label>Usuario:</label>
-      <input type="text" [(ngModel)]="usuario" name="usuario" placeholder="Ingresa tu usuario" required />
+  <!-- Formulario de login -->
+  <div class="auth-form-container" *ngIf="!usuarioLogueado">
+    <div class="auth-form">
+      <h3>Iniciar Sesión</h3>
+      <p>Accede a tu cuenta para gestionar tus dispositivos</p>
 
-      <label>Contraseña:</label>
-      <input type="password" [(ngModel)]="password" name="password" placeholder="Ingresa tu contraseña" required />
+      <form (submit)="login()">
+        <div class="form-group">
+          <label for="usuario">
+            <i class="fas fa-user"></i>
+            Usuario
+          </label>
+          <input
+            type="text"
+            id="usuario"
+            [(ngModel)]="usuario"
+            name="usuario"
+            placeholder="Ingresa tu usuario"
+            required
+          />
+        </div>
 
-      <button type="submit">Iniciar Sesión</button>
-      <button type="button" (click)="toggleFormulario()">Registrarse</button>
-    </form>
+        <div class="form-group">
+          <label for="password">
+            <i class="fas fa-lock"></i>
+            Contraseña
+          </label>
+          <input
+            type="password"
+            id="password"
+            [(ngModel)]="password"
+            name="password"
+            placeholder="Ingresa tu contraseña"
+            required
+          />
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-login">
+            <i class="fas fa-sign-in-alt"></i>
+            Iniciar Sesión
+          </button>
+          <button
+            type="button"
+            class="btn-register"
+            (click)="toggleFormulario()"
+          >
+            <i class="fas fa-user-plus"></i>
+            Registrarse
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
