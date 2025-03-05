@@ -1,0 +1,38 @@
+<div class="chat-container">
+  <div class="chat-button" (click)="toggleChat()">
+    <i class="fas fa-comment-dots"></i>
+    <span class="chat-badge" *ngIf="!isChatOpen">1</span>
+  </div>
+
+  <div class="chat-window" *ngIf="isChatOpen">
+    <div class="chat-header">
+      <h3>Soporte Tecnoyorsh</h3>
+      <button class="close-btn" (click)="toggleChat()">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="chat-messages">
+      <div 
+        *ngFor="let message of messages" 
+        class="message"
+        [ngClass]="{'user-message': message.sender === 'user', 'support-message': message.sender === 'support'}"
+      >
+        <p>{{ message.text }}</p>
+        <small>{{ message.timestamp | date:'shortTime' }}</small>
+      </div>
+    </div>
+
+    <div class="chat-input">
+      <input 
+        type="text" 
+        [(ngModel)]="newMessage" 
+        placeholder="Escribe tu mensaje..."
+        (keyup.enter)="sendMessage()"
+      />
+      <button (click)="sendMessage()">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+</div>
