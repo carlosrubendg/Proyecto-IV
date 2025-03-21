@@ -1,0 +1,31 @@
+<div class="slider-container">
+  <div class="slider">
+    <div
+      class="slide"
+      *ngFor="let slide of slides; let i = index"
+      [class.active]="i === currentSlide"
+      [style.background-image]="'url(' + slide.image + ')'"
+    >
+      <div class="slide-content">
+        <h3>{{ slide.caption }}</h3>
+      </div>
+    </div>
+
+    <button class="slider-arrow prev-arrow" (click)="previousSlide()">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <button class="slider-arrow next-arrow" (click)="nextSlide()">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <div class="slider-dots">
+      <span
+        class="dot"
+        *ngFor="let slide of slides; let i = index"
+        [class.active]="i === currentSlide"
+        (click)="goToSlide(i)"
+      ></span>
+    </div>
+  </div>
+</div>

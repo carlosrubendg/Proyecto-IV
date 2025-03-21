@@ -7,13 +7,15 @@ import { ChatComponent } from './components/chat/chat.component';
 import { FAQComponent } from './components/faq/faq.component';
 
 import { FormsModule } from '@angular/forms';
+import { ImageSliderComponent } from './components/image-slider/image-slider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
     ChatComponent,
-    FAQComponent
+    FAQComponent,
+    ImageSliderComponent
   ],
   imports: [
     BrowserModule,

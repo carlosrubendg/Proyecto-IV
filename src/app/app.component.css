@@ -1,3 +1,9 @@
+/* Estilos para la sección del slider */
+.slider-section {
+  padding: 3rem 0;
+  background-color: #f5f5f5;
+}
+
 /* Estilos para redes sociales en footer */
 .social-media-full {
   display: flex;
