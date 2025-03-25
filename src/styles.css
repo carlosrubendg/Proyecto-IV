@@ -234,6 +234,11 @@ section {
   color: #ffcc00;
 }
 
+/* Sección multimedia */
+.multimedia-section {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 /* Sección de contacto */
 .contact-section {
   background-color: rgba(0, 0, 0, 0.7);

@@ -1,0 +1,18 @@
+.video-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 8px;
+}

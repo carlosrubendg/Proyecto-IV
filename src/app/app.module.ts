@@ -8,6 +8,9 @@ import { FAQComponent } from './components/faq/faq.component';
 
 import { FormsModule } from '@angular/forms';
 import { ImageSliderComponent } from './components/image-slider/image-slider.component';
+import { ImageGalleryComponent } from './components/image-gallery/image-gallery.component';
+import { VideoEmbedComponent } from './components/video-embed/video-embed.component';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +18,9 @@ import { ImageSliderComponent } from './components/image-slider/image-slider.com
     AuthComponent,
     ChatComponent,
     FAQComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    ImageGalleryComponent,
+    VideoEmbedComponent
   ],
   imports: [
     BrowserModule,
