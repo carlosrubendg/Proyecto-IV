@@ -1,0 +1,127 @@
+<!-- app.component.html -->
+<div class="main-container">
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <h2>Tu celular en buenas manos</h2>
+      <p>Reparaciones profesionales con garantía</p>
+      <button class="btn-primary">Solicitar servicio</button>
+    </div>
+  </section>
+
+  <section class="slider-section">
+    <app-image-slider></app-image-slider>
+  </section>
+
+  <section id="servicios" class="services-section">
+    <div class="section-header">
+      <h2>Nuestros Servicios</h2>
+      <p>Soluciones completas para tu dispositivo</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3>Cambio de Display</h3>
+        <p>Reemplazamos pantallas dañadas con repuestos de alta calidad</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-microchip"></i>
+        </div>
+        <h3>Reparaciones a nivel tarjeta</h3>
+        <p>Diagnóstico y reparación de componentes electrónicos</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-battery-full"></i>
+        </div>
+        <h3>Centros de Carga</h3>
+        <p>Solución a problemas de carga y batería</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-unlock-alt"></i>
+        </div>
+        <h3>Liberaciones</h3>
+        <p>Liberamos tu dispositivo para cualquier compañía</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="about-section">
+    <div class="section-header">
+      <h2>Sobre Nosotros</h2>
+      <p>Conoce más acerca de nuestra empresa</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Misión</h3>
+        <p>"Brindar soluciones rápidas, confiables y accesibles para la reparación de dispositivos móviles, ofreciendo un servicio personalizado y de alta calidad que garantice la satisfacción de nuestros clientes y prolongue la vida útil de sus equipos."</p>
+      </div>
+
+      <div class="about-card">
+        <h3>Visión</h3>
+        <p>"Ser reconocidos como la opción líder en reparación de celulares en nuestra comunidad, destacándonos por nuestra innovación, compromiso con el cliente y excelencia en el servicio, contribuyendo a un mundo donde la tecnología sea sostenible y accesible para todos."</p>
+      </div>
+
+      <div class="about-card">
+        <h3>Valores</h3>
+        <ul class="values-list">
+          <li><strong>Calidad:</strong> Garantizar reparaciones duraderas y eficientes utilizando piezas y técnicas de alta calidad.</li>
+          <li><strong>Confianza:</strong> Ofrecer transparencia en los diagnósticos, precios y procesos para generar confianza en nuestros clientes.</li>
+          <li><strong>Innovación:</strong> Mantenernos actualizados con las últimas tecnologías y métodos de reparación.</li>
+          <li><strong>Servicio al cliente:</strong> Priorizar la satisfacción del cliente con atención personalizada y soluciones rápidas.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="multimedia-section">
+    <app-video-embed></app-video-embed>
+    <app-image-gallery></app-image-gallery>
+  </section>
+
+  <section id="contacto" class="contact-section">
+    <div class="section-header">
+      <h2>Contacto</h2>
+      <p>Estamos aquí para ayudarte</p>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Dirección del local, Ciudad, Estado</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <p>+52 123 456 7890</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <p>contacto@tecnoyorsh.com</p>
+        </div>
+        <div class="social-media">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <app-auth></app-auth>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <app-faq></app-faq>
+  </section>
+  <app-chat></app-chat>
+</div>
